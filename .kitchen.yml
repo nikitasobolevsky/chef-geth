@@ -11,6 +11,10 @@ verifier:
   name: inspec
 
 platforms:
+  - name: ubuntu-16.04
+    lifecycle:
+      post_converge:
+      - local: sleep 10
   - name: ubuntu-18.04
     lifecycle:
       post_converge:
@@ -20,6 +24,14 @@ platforms:
       post_converge:
       - local: sleep 10
   - name: debian-8
+    lifecycle:
+      post_converge:
+      - local: sleep 10
+  - name: debian-9
+    lifecycle:
+      post_converge:
+      - local: sleep 10
+  - name: oracle-7
     lifecycle:
       post_converge:
       - local: sleep 10

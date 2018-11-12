@@ -1,5 +1,3 @@
-# # encoding: utf-8
-
 describe service('geth') do
   it { should be_installed }
   it { should be_enabled }
@@ -16,9 +14,8 @@ describe port(8546) do
   its('protocols') { should cmp 'tcp' }
 end
 
-describe port(30303) do
+describe port('30303') do
   it { should be_listening }
   its('protocols') { should include('tcp') }
   its('protocols') { should include('udp') }
 end
-

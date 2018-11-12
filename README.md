@@ -11,8 +11,8 @@ https://github.com/nikitasobolevsky/chef-geth
 This cookbook was tested on Amazon & Ubuntu Linux and expected to work on other RHEL platforms.
 
 ## Cookbook Dependency
-toml
-tar
+* toml
+* tar
 
 ## Core Attributes
 * `default['geth']['conf_file']` (default: `/etc/geth.toml`): Geth configuration file.

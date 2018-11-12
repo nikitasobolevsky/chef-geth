@@ -1,0 +1,5 @@
+Layout:
+  Style/ExtraSpacing:
+    Enabled: false
+LineLength:
+  Enabled: false
